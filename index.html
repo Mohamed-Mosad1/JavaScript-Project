@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/logo.png" type="image/png">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/media query.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>JavaScript Exam</title>
+</head>
+
+<body>
+  <!-- ============================ Start NavBar ============================ -->
+  <nav class="leftNavMenu min-vh-100 position-fixed d-flex top-0">
+    <div class="navTab min-vh-100 p-4">
+      <div class="links">
+        <ul class="list-unstyled">
+          <li class="py-2 animate__animated animate__delay-1s" id="searchBtn">Search</li>
+          <li class="py-2 animate__animated animate__delay-2s" id="categoriesBtn">Categories</li>
+          <li class="py-2 animate__animated animate__delay-3s" id="areaBtn">Area</li>
+          <li class="py-2 animate__animated animate__delay-4s" id="ingredientsBtn">Ingredients</li>
+          <li class="py-2 animate__animated animate__delay-5s" id="contactBtn">Contact Us</li>
+        </ul>
+      </div>
+      <div class="navFooter">
+        <div class="socialIcons text-center">
+          <i class="fa-brands fa-lg fa-facebook"></i>
+          <i class="fa-brands fa-lg fa-twitter"></i>
+          <i class="fa-solid fa-lg fa-globe"></i>
+        </div>
+        <div class="copyright pt-3">
+          <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+        </div>
+      </div>
+    </div>
+    <div class="navHeader d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black">
+      <img class="logo" src="img/logo.png" alt="failed to load image">
+      <i class="fa-solid openIcon fa-align-justify fa-2x"></i>
+      <i class="fa-solid closeIcon fa-2x fa-x d-none"></i>
+      <div>
+        <i class="fa-solid fa-globe pb-2 d-block"></i>
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
+    </div>
+  </nav>
+  <!-- ============================ End NavBar ============================ -->
+  <!-- ============================ Start Search ============================ -->
+  <section class="container w-75 d-none" id="search">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="inputs">
+          <input class="form-control bg-transparent my-4" type="text" placeholder="Search By Name" id="searchName">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="inputs">
+          <input class="form-control bg-transparent my-4" type="text" placeholder="Search By First Letter" id="searchFirstLetter">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ============================ End Search ============================ -->
+  <!-- ============================ Start Categories ============================ -->
+  <section class="container p-4" id="categories">
+    <div class="row">
+
+
+    </div>
+  </section>
+  <!-- ============================ End Categories ============================ -->
+  <!-- ============================ Start Area ============================ -->
+  <section class="container" id="area">
+    <div class="row">
+
+    </div>
+  </section>
+  <!-- ============================ End Area ============================ -->
+  <!-- ============================ Start Ingredients ============================ -->
+  <section class="container" id="ingredients">
+    <div class="row">
+
+    </div>
+  </section>
+  <!-- ============================ End Ingredients ============================ -->
+  <!-- ============================ Start contact ============================ -->
+  <section class="contact min-vh-100 p-3 d-flex justify-content-center align-items-center" id="contact">
+    <div class="container w-75 text-center">
+      <div class="row g-4">
+        <div class="col-md-6">
+            <input id="nameInput" type="text" class="form-control" placeholder="Enter Your Name">
+            <p id="nameAlert" class="alert alert-danger w-100 mt-2 d-none">
+                Special characters and numbers not allowed
+            </p>
+        </div>
+        <div class="col-md-6">
+            <input id="emailInput" type="email" class="form-control " placeholder="Enter Your Email">
+            <p id="emailAlert" class="alert alert-danger w-100 mt-2 d-none">
+                Email not valid *exemple@yyy.zzz
+            </p>
+        </div>
+        <div class="col-md-6">
+            <input id="phoneInput" type="number" class="form-control " placeholder="Enter Your Phone">
+            <p id="phoneAlert" class="alert alert-danger w-100 mt-2 d-none">
+                Enter valid Phone Number
+            </p>
+        </div>
+        <div class="col-md-6">
+            <input id="ageInput" type="number" class="form-control " placeholder="Enter Your Age">
+            <p id="ageAlert" class="alert alert-danger w-100 mt-2 d-none">
+                Enter valid age
+            </p>
+        </div>
+        <div class="col-md-6">
+            <input  id="passwordInput" type="password" class="form-control " placeholder="Enter Your Password">
+            <p id="passwordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                Enter valid password *Minimum eight characters, at least one letter and one number:*
+            </p>
+        </div>
+        <div class="col-md-6">
+            <input  id="repasswordInput" type="password" class="form-control " placeholder="Repassword">
+            <p id="repasswordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                Enter valid repassword 
+            </p>
+        </div>
+        </div>
+        <button id="submitBtn" disabled class="btn btn-outline-danger px-2 mt-3">Submit</button>
+    </div>
+  </section>
+  <!-- ============================ End contact ============================ -->
+
+  <section class="loading min-vh-100 align-items-center bg-warning position-fixed min-vh-100 top-0 start-0 bottom-0 end-0">
+    <div class="spinner">
+      <div class="rect1"></div>
+      <div class="rect2"></div>
+      <div class="rect3"></div>
+      <div class="rect4"></div>
+      <div class="rect5"></div>
+    </div>
+
+
+  </section>
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery code min.js"></script>
+  <script src="js/main.js" type="module"></script>
+</body>
+
+</html>

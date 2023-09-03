@@ -1,0 +1,38 @@
+@media screen and (max-width: 300px) {
+    :root {
+      font-size: 12px;
+    }
+  }
+  
+  @media screen and (min-width: 1400px) {
+  
+  
+  }
+  @media (max-width: 1366px) {
+  
+  }
+  @media screen and (max-width: 1400px) {
+  
+  }
+  
+  @media screen and (max-width: 1200px) {
+
+  }
+  
+  @media screen and (max-width: 992px) {
+
+  }
+  
+  @media screen and (max-width: 768px) {
+
+
+  }
+  
+  @media screen and (max-width: 576px) {
+  
+  }
+  
+  @media screen and (max-height: 450px) {
+
+  }
+  
