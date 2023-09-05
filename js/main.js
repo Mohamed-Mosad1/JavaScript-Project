@@ -14,7 +14,6 @@ const submitBtn = document.getElementById("submitBtn");
 const iconClose = document.querySelector(".iconClose");
 
 $(document).ready(() => {
-  document.getElementById("contact").classList.add("d-none");
   searchByName("").then(() => {
     $(".loading").fadeOut(500);
     $("body").css("overflow", "visible");
@@ -58,7 +57,7 @@ if (searchBtn) {
     categoriesSection.innerHTML = "";
     areaSection.innerHTML = "";
     ingredientsSection.innerHTML = "";
-    contactSection.innerHTML = "";
+    document.getElementById("contact").classList.add("d-none")
   });
 }
 
@@ -251,7 +250,7 @@ categoriesBtn.addEventListener("click", function () {
   getCategoriesData();
   searchSection.classList.add("d-none");
   areaSection.innerHTML = "";
-  categoriesSection.innerHTML = "";
+  document.getElementById("contact").classList.add("d-none")
   ingredientsSection.innerHTML = "";
 });
 
@@ -342,7 +341,7 @@ async function getAreaDetails(mealId) {
 
 areaBtn.addEventListener("click", function () {
   searchSection.classList.add("d-none");
-  areaSection.innerHTML = "";
+  document.getElementById("contact").classList.add("d-none")
   categoriesSection.innerHTML = "";
   ingredientsSection.innerHTML = "";
   getArea();
@@ -443,7 +442,7 @@ ingredientsBtn.addEventListener("click", function () {
   searchSection.classList.add("d-none");
   areaSection.innerHTML = "";
   categoriesSection.innerHTML = "";
-  ingredientsSection.innerHTML = "";
+  document.getElementById("contact").classList.add("d-none")
   getIngredients();
   closeNavbar();
 });
@@ -456,7 +455,6 @@ contactBtn.addEventListener("click", () => {
   categoriesSection.innerHTML = "";
   ingredientsSection.innerHTML = "";
   closeNavbar();
-  $("#categories").addClass("d-none");
   document.getElementById("contact").classList.remove("d-none");
 });
 
