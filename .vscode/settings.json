@@ -1,0 +1,7 @@
+{
+    "git.rebaseWhenSync": false,
+    "git.rememberPostCommitCommand": false,
+    "git.alwaysShowStagedChangesResourceGroup": true,
+    "git.enabled": true,
+    "git.enableSmartCommit": false
+}
