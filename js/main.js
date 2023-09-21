@@ -16,6 +16,7 @@ const iconClose = document.querySelector(".iconClose");
 $(document).ready(() => {
   searchByName("").then(() => {
     $(".loading").fadeOut(500);
+    document.getElementById("contact").classList.add("d-none")
     $("body").css("overflow", "visible");
   });
 });
