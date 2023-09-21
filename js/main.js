@@ -80,7 +80,6 @@ if (searchName) {
   searchName.addEventListener("keyup", function () {
     const value = searchName.value;
     searchByName(value);
-    console.log("hello");
   });
 }
 async function searchByFirstLetter(value) {
@@ -164,7 +163,6 @@ async function getCategoriesMeals(meal) {
 }
 
 function displayCategoriesMeals(dataMeals) {
-  $(".loading").fadeIn(500);
   let cartona = ``;
   for (let i = 0; i < dataMeals.length; i++) {
     cartona += `<div class="col-md-6 col-lg-3">
@@ -177,7 +175,6 @@ function displayCategoriesMeals(dataMeals) {
     </div>`;
   }
   categoriesSection.innerHTML = cartona;
-  $(".loading").fadeOut(500);
 }
 
 async function getCategoryDetails(mealId) {

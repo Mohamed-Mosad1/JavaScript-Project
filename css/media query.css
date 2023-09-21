@@ -1,57 +1,65 @@
-@media screen and (min-width: 1201px) {
-  .container {
-    margin-right: 0;
-    margin-left: auto;
-  }
+#search .container,
+#categories .container,
+#area .container,
+#ingredients .container {
+  margin-right: 0;
+  margin-left: auto;
 }
+
 @media screen and (min-width: 1051px) and (max-width: 1200px) {
-  .container {
+  #search .container,
+  #categories .container,
+  #area .container,
+  #ingredients .container {
     width: 94%;
-    margin-right: 0;
-    margin-left: auto;
-  }
-  .container .row {
     transform: translateX(-2%);
   }
 }
+
 @media screen and (min-width: 993px) and (max-width: 1050px) {
-  .container {
+  #search .container,
+  #categories .container,
+  #area .container,
+  #ingredients .container {
     width: 94%;
-    margin-right: 0;
-    margin-left: auto;
   }
 }
+
 @media screen and (min-width: 769px) and (max-width: 992px) {
-  .container {
+  #search .container,
+  #categories .container,
+  #area .container,
+  #ingredients .container {
     width: 80%;
     margin-left: auto;
     margin-right: 0;
-  }
-  .container .row {
-    translate: -13%;
+    transform: translateX(-13%);
   }
 }
+
 @media screen and (min-width: 577px) and (max-width: 768px) {
-  .container {
+  #search .container,
+  #categories .container,
+  #area .container,
+  #ingredients .container {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
 }
-@media screen and (min-width: 301px) and (max-width: 576px) {
-  .container {
+
+@media screen and (min-width: 301px) and (max-width: 576px),
+  screen and (max-height: 450px) {
+  #search .container,
+  #categories .container,
+  #area .container,
+  #ingredients .container {
     width: 85%;
     margin-left: auto;
     margin-right: 0;
   }
 }
-@media screen and (max-height: 450px) {
-  .container {
-    width: 85%;
-    margin-left: auto;
-    margin-right: 0;
-  }
-}
+
 @media screen and (max-width: 300px) {
   :root {
     font-size: 12px;
